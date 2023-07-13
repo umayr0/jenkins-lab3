@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build'){
             steps {
-                sh "docker build -t umayrahmed/jenkinslab3 ."
+                sh "sudo docker build -t umayrahmed/jenkinslab3 ."
             }
         }
     }
