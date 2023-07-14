@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Container Kill'){
             steps {
-                bash "docker rm -f $(docker ps -aq) || true"
+                "docker rm -f $(docker ps -aq) || true"
             }
         stage('Build'){
             steps {
