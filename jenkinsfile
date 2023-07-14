@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Container Kill'){
             steps {
-                sh "docker rm -f $(docker ps -aq) || true"
+                sh 'docker rm -f $(docker ps -aq) || true'
             }
         }
         stage('Build'){
             steps {
-                sh "docker build -t umayrahmed/jenkinslab3 ."
+                sh 'docker build -t umayrahmed/jenkinslab3 .'
             }
         }
     }
