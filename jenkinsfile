@@ -11,10 +11,5 @@ pipeline {
                 sh "docker build -t umayrahmed/jenkinslab3 ."
             }
         }
-        stage('Run'){
-            steps {
-                sh "docker run  -d -p 80:5500 --name task1 task1"
-            }
-        }
     }
 }
